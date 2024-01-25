@@ -1,6 +1,6 @@
 {
   "name": "@printi-tech/inscricao-estadual-printi",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Biblioteca de validação de inscrições estaduais",
   "main": "ie.js",
   "scripts": {
