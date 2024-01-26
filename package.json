@@ -1,5 +1,5 @@
 {
-  "name": "@printi-tech/inscricao-estadual-printi",
+  "name": "@Printi/inscricao-estadual",
   "version": "1.0.3",
   "description": "Biblioteca de validação de inscrições estaduais",
   "main": "ie.js",
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Printi/inscricao-estadual.git"
+    "url": "git://github.com/Printi/inscricao-estadual.git"
   },
   "keywords": [
     "inscrição",

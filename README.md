@@ -12,7 +12,7 @@ Validações implementadas de acordo com o [manual do Sintegra](http://www.sinte
 
 Instalação:
 ```bash
-npm i @printi-tech/inscricao-estadual-printi
+npm install @printi/inscricao-estadual@1.0.3
 ```
 Utilização:
 
@@ -23,9 +23,9 @@ ie(inscricaoEstadual, uf);
 #### Browser
 
 Instalação: faça o download [aqui](https://github.com/Printi/inscricao-estadual/blob/main/ie.min.js) ou via bower:
-
+Bower já está praticamente deprecated, não aceita mais novos registros de pacote, só conseguimos instalar agora pelo github
 ```bash
-bower install --save inscricao-estadual
+bower install --save git://github.com/Printi/inscricao-estadual.git#latest
 ```
 
 Utilização:
