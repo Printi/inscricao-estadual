@@ -75,8 +75,10 @@ function calculoTrivial(valor, base, validarTamanho){
     return valor === base + digito;
 }
 
-function naoComecaCom(string, valor){
-    return string.substring(0, valor.length) !== valor;
+function naoComecaCom(string, valores) {
+    return valores.every(function (valor) {
+        return !string.startsWith(valor);
+    });
 }
 
 function entre(valor, limiteInferior, limiteSuperior){
@@ -138,7 +140,7 @@ var funcoes = {
             return false;
         }
 
-        if(naoComecaCom(valor, '24')) {
+        if(naoComecaCom(valor, ['24'])) {
             return false;
         }
 
@@ -175,7 +177,7 @@ var funcoes = {
             return false;
         }
 
-        if(naoComecaCom(valor, '20')) {
+        if(naoComecaCom(valor, ['20'])) {
             return false;
         }
 
@@ -197,7 +199,7 @@ var funcoes = {
             return false;
         }
 
-        if(naoComecaCom(valor, '03')) {
+        if(naoComecaCom(valor, ['03'])) {
             return false;
         }
 
@@ -235,7 +237,7 @@ var funcoes = {
             return false;
         }
 
-        if(naoComecaCom(valor, '24')) {
+        if(naoComecaCom(valor, ['24'])) {
             return false;
         }
 
@@ -316,7 +318,7 @@ var funcoes = {
             return false;
         }
 
-        if(naoComecaCom(valor, '15')) {
+        if(naoComecaCom(valor, ['15', '75', '76', '77', '78', '79'])) {
             return false;
         }
 
@@ -328,7 +330,7 @@ var funcoes = {
             return false;
         }
 
-        if(naoComecaCom(valor, '06')) {
+        if(naoComecaCom(valor, ['06'])) {
             return false;
         }
 
@@ -352,7 +354,7 @@ var funcoes = {
             return false;
         }
 
-        if(naoComecaCom(valor, '12')) {
+        if(naoComecaCom(valor, ['12'])) {
             return false;
         }
 
@@ -364,7 +366,7 @@ var funcoes = {
             return false;
         }
 
-        if(naoComecaCom(valor, '01')) {
+        if(naoComecaCom(valor, ['01'])) {
             return false;
         }
 
@@ -514,7 +516,7 @@ var funcoes = {
     },
 
     ms: function(valor){
-        if(naoComecaCom(valor, '28')) {
+        if(naoComecaCom(valor, ['28'])) {
             return false;
         }
 
